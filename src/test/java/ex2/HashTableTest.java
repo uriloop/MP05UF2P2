@@ -14,7 +14,7 @@ class HashTableTest {
         HashTable ht = new HashTable();
         ht.put("1","1");
         Assertions.assertEquals(ht.get("1"),"1");
-        Assertions.assertEquals(ht.count(),0);
+        Assertions.assertEquals(ht.count(),1);
         Assertions.assertEquals(ht.size(),16);
     }
 
