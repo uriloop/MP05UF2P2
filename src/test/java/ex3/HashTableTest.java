@@ -1,18 +1,15 @@
-package ex2;
+package ex3;
 
+import ex2.HashTable;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import java.util.HashSet;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class HashTableTest {
 
 
     @Test
     void count() {
-        HashTable ht = new HashTable();
+        ex2.HashTable ht = new ex2.HashTable();
         ht.put("0", "0");
         Assertions.assertEquals(ht.count(), 1);          //  comprovem que es conta un element sol
         ht.put("11", "11");
@@ -29,7 +26,7 @@ class HashTableTest {
     @Test
     void put() {
         // comprovar que passa quan :     (Afegim una clau que ja existeix V, que no exsteix V, que no existeix pero existeix el seu hash V, que existeix i existeix el seu hash)
-        HashTable ht = new HashTable();
+        ex2.HashTable ht = new ex2.HashTable();
         ht.put("0", "0");
         Assertions.assertEquals(ht.count(), 1);         // Comprovem que la conta de items funciona al sumar un nou element HashTable.  (Falla sense les correccions) $1
         Assertions.assertEquals(ht.get("0"), "0");       // Comprovem que ens retorna l'element corrresponent
@@ -51,7 +48,7 @@ class HashTableTest {
     void get() {
         // comprovar que passa quan :     (Demanem una clau que ja existeix, que no exsteix, que no existeix pero existeix el seu hash, que existeix i existeix el seu hash)
 
-        HashTable ht = new HashTable();
+        ex2.HashTable ht = new ex2.HashTable();
         ht.put("0", "0");
         ht.put("1", "1");
         Assertions.assertEquals(ht.get("0"), "0");       // Comprovem que ens retorna l'element corrresponent
@@ -69,7 +66,7 @@ class HashTableTest {
     void drop1() {
 
         // comprovar que passa quan :     (S'esborra una clau que existeix, que no exsteix, que no existeix pero existeix el seu hash)
-        HashTable ht = new HashTable();
+        ex2.HashTable ht = new ex2.HashTable();
         ht.put("0", "0");                              // Afegim dos elements per comprovar que també està sumant
         ht.put("1", "1");
         ht.drop("1");
@@ -86,7 +83,7 @@ class HashTableTest {
 
     @Test
     void drop2() {
-        HashTable ht = new HashTable();
+        ex2.HashTable ht = new HashTable();
         ht.put("1", "1");
         ht.put("0", "0");
         ht.put("11", "11");
