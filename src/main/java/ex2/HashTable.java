@@ -3,7 +3,7 @@ package ex2;
 // Original source code: https://gist.github.com/amadamala/3cdd53cb5a6b1c1df540981ab0245479
 // Modified by Fernando Porrino Serrano for academic purposes.
 
-import ex3.HashTable2;
+
 
 import java.util.ArrayList;
 
@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * Original source code: https://gist.github.com/amadamala/3cdd53cb5a6b1c1df540981ab0245479
  */
 public class HashTable {
-    private final HashTable2 hashTable2 = new HashTable2();
+    private final HashTable hashTable2 = new HashTable();
 
     public int count() {
         return hashTable2.count();

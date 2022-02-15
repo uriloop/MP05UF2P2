@@ -15,4 +15,5 @@ public class Enunciat {
        fer-hi canvis refactoritzant es corre el risc de trencar el codi.
 
 */
+
 }
